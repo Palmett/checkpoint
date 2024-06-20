@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../assets/back-all.jpg);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    z-index: 1;
+}
+
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.navbar p {
+    margin: 0;
+    font-size: 1.2em;
+    display: inline;
+    padding: 0 5px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.red{
+    background-color: red;
+}
+
+.h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+section img {
+    width: 100%;
+    height: 30vh;
+    
+}
+
+section h1 {
+
+    color: #fff;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.cities {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.cities div {
+    flex: 1;
+    max-width: 25%;
+    text-align: center;
+}
+
+.cities img {
+    width: 100%;
+    height: auto;
+}
+
+
+.information {
+    padding: 20px;
+    text-align: center;
+}
+
+.squares{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+.info{
+    background-color: gray;
+    padding: 30px;
+    border-radius: 40px;
+}
+
+.info ul {
+    padding: 0;
+    margin: 20px 0;
+}
+
+.info li {
+    margin-bottom: 10px;
+}
+
+.price table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.price th, .price td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    background-color: gray;
+
+
+}
+
+
+footer {
+    background-color: #000;
+    display: flex;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+}
+
+
+
+.form {
+    padding: 10px;
+}
+
+form fieldset {
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+form legend {
+    padding: 0 10px;
+}
+
+form label {
+    display: inline-block;
+
+    margin-right: 10px;
+}
+
+form input[type="radio"], form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form button {
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    section h1 {
+        font-size: 1.5em;
+    }
+
+    .cities div {
+        max-width: 45%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .price table {
+        width: 100%;
+    }
+}
