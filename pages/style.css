@@ -4,20 +4,15 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: url(../assets/back-all.jpg);
-    background-repeat: no-repeat;
-    object-fit: cover;
-    z-index: -1;
-}
-
 
 
 .layout {
+    background-image: url(../assets/back-all.jpg);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    z-index: 1;
+    
+
 }
 
 
@@ -50,6 +45,13 @@ nav a {
 
 .red{
     background-color: red;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.banner{
+    object-fit: cover;
+
 }
 
 .h1{
@@ -84,6 +86,7 @@ h2 {
     flex-wrap: wrap;
     gap: 20px;
     padding: 0 20px;
+    height: 30vh;
 }
 
 .cities div {
@@ -92,11 +95,29 @@ h2 {
     text-align: center;
 }
 
-.cities img {
-    width: 100%;
-    height: auto;
+
+.name_city{
+    background-color: rgba(83, 83, 83, 0.5);
 }
 
+.Tokyo{
+    background-image: url(../assets/Tokyo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Osaka{
+    background-image: url(../assets/Osaka.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Kyoto{
+    background-image: url(../assets/Kyoto.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
 
 .information {
     padding: 20px;
@@ -113,7 +134,7 @@ h2 {
 }
 
 .info{
-    background-color: gray;
+    background-color: rgba(70, 70, 70,0.5);
     padding: 30px;
     border-radius: 40px;
 }
@@ -137,7 +158,7 @@ h2 {
     border: 1px solid #000;
     padding: 10px;
     text-align: center;
-    background-color: gray;
+    background-color: rgba(73, 73, 73,0.5);
 
 
 }
